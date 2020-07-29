@@ -16,7 +16,7 @@ const ReadmeImg = ({ width, height, children }) => {
                 margin: 0;
                 box-sizing: border-box;
                 background-color: antiquewhite;
-                margin: 1.5px;
+                margin: 0.5px;
               }
             `}</style>
           {children}
