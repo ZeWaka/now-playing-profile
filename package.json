@@ -4,6 +4,7 @@
   "version": "1.0.1",
   "description": "Github profile",
   "main": "index.js",
+  "type": "module",
   "dependencies": {
     "isomorphic-unfetch": "^4.0",
     "querystring": "^0.2.1",
