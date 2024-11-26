@@ -1,10 +1,10 @@
-import { NowRequest, NowResponse } from "@vercel/node";
+import { VercelRequest, VercelResponse } from "@vercel/node";
 import { renderToString } from "react-dom/server";
 import { decode } from "querystring";
 import { Player } from "../components/NowPlaying";
 import { nowPlaying } from "../utils/spotify";
 
-export default async function (req: NowRequest, res: NowResponse) {
+export default async function (req: VercelRequest, res: VercelResponse) {
   const {
     item = {},
     is_playing: isPlaying = false,
@@ -38,7 +38,7 @@ export default async function (req: NowRequest, res: NowResponse) {
 
   const artist = (item.artists || []).map(({ name }) => name).join(", ");
   const text = renderToString(
-    Player({ cover: coverImg, artist, track, isPlaying, progress, duration })
+    Player({ cover: coverImg, artist, track, isPlaying, progress, duration }),
   );
   return res.status(200).send(text);
 }
