@@ -15,7 +15,7 @@
     "@types/node": "^22.10",
     "@types/react": "^18.3",
     "@types/react-dom": "^18.3",
-    "@vercel/node": "^3.2",
+    "@vercel/node": "^2.15",
     "husky": "^9.1",
     "lint-staged": "^15",
     "prettier": "^3"
