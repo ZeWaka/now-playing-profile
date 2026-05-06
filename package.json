@@ -4,7 +4,6 @@
   "version": "1.0.1",
   "description": "Github profile",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "typecheck": "tsc --noEmit",
     "start": "vercel dev"
